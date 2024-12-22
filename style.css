@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --transparant-white: #ffffffa2;
+    --transparant-white2: #ffe70c31;
+    --orange1: #FF8A33;
+    --orange2: #FF7000;
+    --orange3: #E66100;
+    --orange4: #CC5400;
+    --orange5: #B24600;
+}
+
+body {
+    background: linear-gradient(to right, var(--orange1), var(--orange2), var(--orange3), var(--orange4), var(--orange5));
+    color: var(--secondary-color);
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 28em;
+}
+
+.container {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--transparant-white);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.shape {    
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape1 {
+    background-color: var(--transparant-white2);
+    height: 13em;
+    width: 13em;
+    top: -8.5em;
+    left: -6.5em;
+
+}
+
+.shape2 {
+    background-color: var(--transparant-white2);
+    height: 7em;
+    width: 7em;
+    top: 10.5em;
+    left: 25.5em;
+}
+
+.search-container {
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    gap: 0.5em;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    padding: 0.4em 1em;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.search-container:hover {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+.search-container input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+    font-size: 0.9em;
+    padding: 0.3em;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-container button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-container button:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
