@@ -25,13 +25,13 @@ body {
 }
 
 .container {
-    display: flex ;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
     background-color: var(--transparant-white);
-    border-radius: 10px;
-    padding: 20px;
+    backdrop-filter: blur(4px);
+    border-radius: 0.6em;
+    padding: 3em 1.8em;
+    box-shadow: 0 1.8em 3.7em #921616;
+    text-align: center;
 }
 
 .shape {    
@@ -103,7 +103,66 @@ body {
     transform: scale(1.05);
 }
 
+.city {
+    font-size: 2em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.20em;
+    margin: 0.1em 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.weather,
+.desc {
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 0.1em 0;
+    text-align: center;
+
+}
+
+#result img {
+    width: 7em;
+    height: 7em;
+    margin: 0 auto;
+}
+
+#result .humidity-icon {
+    width: 1em;
+    height: 1em;
+}
+
+#result .wind-icon {
+    width: 1em;
+    height: 1em;
+}
 
 
+.temp {
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 0.1em 0;
+    text-align: center;
+    color: #000;
+}   
 
+
+.humidity,
+.wind {
+    font-size: 1em;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 0.1em 0;
+    text-align: center;
+    color: #000000;
+}
 
